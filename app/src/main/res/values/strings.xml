@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">praktikum4</string>
+    <string name="prodi">Teknologi Informasi</string>
     <string name="nama_1">Bambang Sumantri</string>
     <string name="alamat_1">Turi, Sleman</string>
     <string name="nama_2">Gibran Fathoni</string>
