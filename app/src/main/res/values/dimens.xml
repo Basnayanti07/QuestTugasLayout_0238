@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_atas">60dp</dimen>
+    <dimen name="spasi_judul">15dp</dimen>
+    <dimen name="padding_kartu">8dp</dimen>
+    <dimen name="padding_isi_kartu">6dp</dimen>
+    <dimen name="ukuran_logo">48dp</dimen>
+    <dimen name="spasi_logo_teks">12dp</dimen>
+    <dimen name="padding_bawah_copy">20dp</dimen>
+    <integer name="font_judul">35</integer>
+    <integer name="font_univ">22</integer>
+    <integer name="font_nama">22</integer>
+    <integer name="font_detail">14</integer>
+</resources>
