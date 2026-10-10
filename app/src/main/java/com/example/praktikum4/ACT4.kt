@@ -4,9 +4,11 @@ import android.graphics.fonts.FontFamily
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -81,5 +83,30 @@ fun KartuProfil(
                 contentDescription = stringResource(id = R.string.desc_logo),
                 modifier = Modifier.size(dimensionResource(id = R.dimen.ukuran_logo))
             )
+        }
+    }
+}
+
+@Composable
+fun TugasLayout(modifier: Modifier = Modifier) {
+    Box(modifier = modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = dimensionResource(id = R.dimen.padding_atas)),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = stringResource(id = R.string.prodi),
+                fontSize = integerResource(id = R.integer.font_judul).sp,
+                fontWeight = FontWeight.Bold
+            )
+            Text(
+                text = stringResource(id = R.string.univ),
+                fontSize = integerResource(id = R.integer.font_univ).sp,
+                fontWeight = FontWeight.Bold
+            )
+            Spacer(modifier = Modifier.padding(dimensionResource(id = R.dimen.spasi_judul)))
+        }
     }
 }
