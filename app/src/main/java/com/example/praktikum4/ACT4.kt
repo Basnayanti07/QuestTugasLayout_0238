@@ -75,6 +75,11 @@ fun KartuProfil(
                     color = colorResource(id = warnaAlamat)
                 )
             }
-
+            Spacer(modifier = Modifier.width(dimensionResource(id = R.dimen.spasi_logo_teks)))
+            Image(
+                painter = painterResource(id = R.drawable.logo),
+                contentDescription = stringResource(id = R.string.desc_logo),
+                modifier = Modifier.size(dimensionResource(id = R.dimen.ukuran_logo))
+            )
     }
 }
