@@ -62,11 +62,19 @@ fun KartuProfil(
                     fontWeight = beratNama,
                     color = colorResource(id = R.color.teks_putih)
                 )
+                if (telepon != null) {
+                    Text(
+                        text = stringResource(id = telepon),
+                        fontSize = integerResource(id = R.integer.font_detail).sp,
+                        color = colorResource(id = R.color.teks_cyan)
+                    )
+                }
                 Text(
                     text = stringResource(id = alamat),
                     fontSize = integerResource(id = R.integer.font_detail).sp,
                     color = colorResource(id = warnaAlamat)
                 )
             }
+
     }
 }
