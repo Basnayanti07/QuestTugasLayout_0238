@@ -139,5 +139,11 @@ fun TugasLayout(modifier: Modifier = Modifier) {
                 beratNama = FontWeight.Bold
             )
         }
+        Text(
+            text = stringResource(id = R.string.copy),
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(bottom = dimensionResource(id = R.dimen.padding_bawah_copy))
+        )
     }
 }
