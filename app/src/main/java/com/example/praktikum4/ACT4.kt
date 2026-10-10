@@ -1,6 +1,6 @@
 package com.example.praktikum4
 
-import android.graphics.fonts.FontFamily
+import androidx.compose.ui.text.font.FontFamily
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
@@ -107,6 +107,37 @@ fun TugasLayout(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold
             )
             Spacer(modifier = Modifier.padding(dimensionResource(id = R.dimen.spasi_judul)))
+            KartuProfil(
+                nama = R.string.nama_1,
+                alamat = R.string.alamat_1,
+                warnaKartu = R.color.card_abu,
+                warnaAlamat = R.color.teks_Kuning,
+                fontNama = FontFamily.Cursive
+            )
+            KartuProfil(
+                nama = R.string.nama_2,
+                telepon = R.string.telp_2,
+                alamat = R.string.alamat_2,
+                warnaKartu = R.color.card_ungu,
+                warnaAlamat = R.color.teks_Kuning,
+                beratNama = FontWeight.Bold
+            )
+            KartuProfil(
+                nama = R.string.nama_3,
+                telepon = R.string.telp_3,
+                alamat = R.string.alamat_3,
+                warnaKartu = R.color.card_biru,
+                warnaAlamat = R.color.teks_putih,
+                beratNama = FontWeight.Bold
+            )
+            KartuProfil(
+                nama = R.string.nama_4,
+                telepon = R.string.telp_4,
+                alamat = R.string.alamat_4,
+                warnaKartu = R.color.card_hijau,
+                warnaAlamat = R.color.teks_putih,
+                beratNama = FontWeight.Bold
+            )
         }
     }
 }
